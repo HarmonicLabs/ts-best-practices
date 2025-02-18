@@ -2,7 +2,7 @@
 
 ## Where am I?
 
-Here you find a bunch of general directives on how to design and implement software in typescript (or javascript) with a strong focus on efficiency, readability maintainability.
+Here you find a bunch of general directives on how we design and implement software in typescript (or javascript) with a strong focus on efficiency, readability maintainability.
 
 This includes directives on: 
 

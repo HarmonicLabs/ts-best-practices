@@ -69,7 +69,7 @@ function normalizeITxBuildArgsInputs(input: ITxBuildInput | IUTxO  ): Normalized
 }
 ```
 
-This could have been even more evident if we [indented using 4 spaces](), so we fix that too
+This could have been even more evident if we [indented using 4 spaces](../styling/README.md#indentation), so we fix that too
 
 ```ts
 function normalizeITxBuildArgsInputs(input: ITxBuildInput | IUTxO  ): NormalizedITxBuildInput {
@@ -102,7 +102,7 @@ function normalizeITxBuildArgsInputs(input: ITxBuildInput | IUTxO  ): Normalized
 }
 ```
 
-by doing this we can easly spot some unnecesary indentation, and here we see that maybe we are using [`try``catch` inappropriately]()
+by doing this we can easly spot some unnecesary indentation, and here we see that maybe we are using [`try``catch` inappropriately](../styling/README.md#try-catch-must-handle-and-recover-the-error-or-else-dont-use-it)
 
 ```ts
 function normalizeITxBuildArgsInputs(input: ITxBuildInput | IUTxO  ): NormalizedITxBuildInput {
@@ -127,7 +127,7 @@ function normalizeITxBuildArgsInputs(input: ITxBuildInput | IUTxO  ): Normalized
 }
 ```
 
-Then we [use the types]() to see that `isIUTxO` and `new UTxO` calls are doing duplicate works, since `UTxO.fromCbor` already returns an instance of the `UTxO` class.
+Then we [use the types](../typing/) to see that `isIUTxO` and `new UTxO` calls are doing duplicate works, since `UTxO.fromCbor` already returns an instance of the `UTxO` class.
 
 ```ts
 //Check input type and convert to NormalizedITxBuildInput
@@ -180,7 +180,7 @@ function normalizeITxBuildArgsInputs(input: ITxBuildInput | IUTxO | CanBeCborStr
 }
 ```
 
-finally, we fix some minor [inconsistencies with spacing](), and we [inline variables used once]():
+finally, we fix some minor [inconsistencies with spacing](../styling/README.md#indentation), and we inline variables used once:
 
 ```ts
 // Check input type and convert to NormalizedITxBuildInput
