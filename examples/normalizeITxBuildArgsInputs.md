@@ -32,7 +32,7 @@ function normalizeITxBuildArgsInputs(input: ITxBuildInput | IUTxO  ): Normalized
 }
 ```
 
-First style improvements: [early returns]()
+First style improvements: [early returns](../styling/README.md#use-early-returns)
 
 when an if alwasy terminates (either returns or throw) avoid elses, you get one less indentation
 
