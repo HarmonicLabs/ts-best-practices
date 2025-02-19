@@ -17,7 +17,7 @@ class MyThing
         Object.defineProperty(
             this, "thing", {
                 // this is a closure
-                get: () => _trulyPrivateThing;
+                get: () => _trulyPrivateThing,
                 // this is a closure
                 set: ( next: any ) => {
                     if( Number.isSafeInteger( next ) )
@@ -78,7 +78,7 @@ class MyThing
         Object.defineProperty(
             this, "thing", {
                 // this is a closure
-                get: getThing.bind( thingScope );
+                get: getThing.bind( thingScope ),
                 // this is a closure
                 set: setThing.bind( thingScope ),
                 enumerable: true,
