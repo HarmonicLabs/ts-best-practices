@@ -1,4 +1,4 @@
-# ts-code-best-practices
+# ts-best-practices
 
 ## Where am I?
 
