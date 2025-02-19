@@ -107,7 +107,7 @@ function setThing( this: ThingScope, next: number )
 in this way, `_thing` is truly private;
 
 the `thingScope` object only exsists as long as the class exsists,
-any other variable, if any, in the constructor function will be deallocated.
+any other variable in the constructor function, if any, will be deallocated.
 
 the binded function DOES NOT save the entire scope;
 
