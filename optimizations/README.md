@@ -104,4 +104,14 @@ function setThing( this: ThingScope, next: number )
 }
 ```
 
-in this way, `_thing` is truly private, the binded function DOES NOT save the entire scope, **BUT** you still allocate a new function, so it takes a bit more memory than the optimal example of before. Still better than the entire scope though.
+in this way, `_thing` is truly private;
+
+the `thingScope` object only exsists as long as the class exsists,
+any other variable, if any, in the constructor function will be deallocated.
+
+the binded function DOES NOT save the entire scope;
+
+**BUT** you still allocates a new function;
+so it takes a bit more memory than the optimal example of before.
+
+Still better than the entire scope though.
