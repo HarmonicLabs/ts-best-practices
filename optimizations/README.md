@@ -33,7 +33,7 @@ class MyThing
 
 The problem with closures is that they need to remember the scope outside their definition.
 
-They might be handy, but, especially in large contexts (large here being even 2-3 variables holidng objects), memory really doesn't like them.
+They might be handy, but, especially in large contexts (large here being even 2-3 variables holding objects), memory really doesn't like them.
 
 The **absolute best thing to do** here, even though not strictly semantically the same, would be to use getters and setters.
 
@@ -73,14 +73,14 @@ class MyThing
 
     constructor()
     {
+        // for get and set to work as intended
+        // they must bind to THE SAME object
         const thingScope: ThingScope = { _thing: 0 };
 
         Object.defineProperty(
             this, "thing", {
-                // this is a closure
-                get: getThing.bind( thingScope ),
-                // this is a closure
-                set: setThing.bind( thingScope ),
+                get: getThing.bind( thingScope ), // bind to SAME object
+                set: setThing.bind( thingScope ), // bind to SAME object
                 enumerable: true,
                 configurable: false
             }
